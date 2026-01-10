@@ -11,7 +11,6 @@ class Solution():
             else:
                 seen[num] = i
       
-print(Solution.twoSum([2,11,4,7,15], 9))
                 
 
             
