@@ -1,7 +1,7 @@
 class Solution:
     def moveZeroes(nums):
         left = 0
-        
+        print(nums)
         for right in range(len(nums)):
             # Check if the value of right pointer is zero.
             if nums[right] != 0:
