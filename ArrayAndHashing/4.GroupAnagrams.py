@@ -5,13 +5,12 @@ class Solution:
         groups = defaultdict(list)
 
         for word in strs:
-            print(word)
+
             count = [0] * 26  # assuming lowercase a–z
             for c in word:
                 count[ord(c) - ord('a')] += 1
             groups[tuple(count)].append(word)
             
-            print(count)
         result = list(groups.values())
         result.sort(key=len)   # smallest groups first (optional)
 
