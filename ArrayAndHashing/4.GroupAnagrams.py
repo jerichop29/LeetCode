@@ -2,19 +2,19 @@ from collections import defaultdict
 
 class Solution:
     def groupAnagrams(self, strs):
-        groups = defaultdict(list)
         
-        for word in strs:
+        groups = defaultdict(list)
 
-            count = [0] * 26  # assuming lowercase a–z
-            for c in word:
-                count[ord(c) - ord('a')] += 1
-            groups[tuple(count)].append(word) # create unique key every group of anagrams
+        for str in strs:
+            counter = [0] * 26
+            for c in str:
+                counter[ord(c) - ord('a')] += 1
+            groups[tuple(counter)].append(str)
             
         result = list(groups.values())
-        result.sort(key=len)   # smallest groups first (optional)
-
+        result.sort(key=len)
+        
         return result
 
 s = Solution()
-print(s.groupAnagrams(["cat", "tac", "pot", "top", "act"]))
+print(s.groupAnagrams(["act","pots","tops","cat","stop","hat"]))
