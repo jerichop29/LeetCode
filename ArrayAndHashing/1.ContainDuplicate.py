@@ -9,7 +9,7 @@ class Solution:
 
         return True
     
-#print(Solution.hasDuplicate([1,2,4])) False
-#print(Solution.hasDuplicate([1,2,3,2,4])) True
+print(Solution.hasDuplicate([1,2,4])) #False
+print(Solution.hasDuplicate([1,2,3,2,4])) #True
             
         
