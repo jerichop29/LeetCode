@@ -1,8 +1,10 @@
 class Solution:
     def hasDuplicate(nums):
-        seen = set(nums)
-
-        if seen != nums:
+        #convert into a set to convert a duplicate values as one
+        set = set(nums)
+        
+        
+        if set != nums:
             return False
 
         return True
